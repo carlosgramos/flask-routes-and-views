@@ -1,0 +1,14 @@
+{% extends "j2_base.html" %}
+{% block title %}Main Page{% endblock%}
+{% block head_section %}
+{# Render the contents of the paret block #}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+{% endblock%}
+{% block header %}
+    <h1>Hello</h1>
+{% endblock%}
+{% block content %}
+    <p class="red">hello, world!</p>
+{% endblock%}t
+{% block footer %}<h6>This is the footer</h6>{% endblock%}

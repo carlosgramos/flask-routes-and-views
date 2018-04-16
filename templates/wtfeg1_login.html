@@ -1,0 +1,6 @@
+<form method="POST" action="/">
+    {{ form.hidden_tag() }}
+    {{ form.username.label }}{{ form.username(size=20) }}
+    {{ form.passwd(class='passwd', size=16) }}
+    <input type="submit" value="GO"/>
+</form>

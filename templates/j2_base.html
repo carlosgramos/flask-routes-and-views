@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    {% block head_section %}
+    <title>{% block title %}{% endblock %} - ABC Corp.</title>
+    {% endblock %}
+</head>
+<body>
+    <header id="header">
+        {% block header %}
+        {% endblock %}
+    </header>
+    <div id="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <footer>
+        {% block footer %} &copy; Copyright 2018 by ABC Corp {% endblock %} 
+    </footer>
+</body>
+</html>
